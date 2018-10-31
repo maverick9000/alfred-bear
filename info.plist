@@ -111,7 +111,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>bear://x-callback-url/open-note?id={query}</string>
+				<string>bear://x-callback-url/open-note?id={query}&amp;new_window=yes</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -134,10 +134,10 @@
 echo $orig_query
 if [[ $orig_query == ":t:"* ]]; then
 	new_query=${orig_query:3}
-	open "bear://x-callback-url/open-tag?name=$new_query"
+	open "bear://x-callback-url/open-tag?name=$new_query&amp;new_window=yes"
 else
 	new_query=${orig_query:3}
-	open "bear://x-callback-url/open-note?id=$new_query"
+	open "bear://x-callback-url/open-note?id=$new_query&amp;new_window=yes"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -255,7 +255,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open "bear://x-callback-url/create?{query}"</string>
+				<string>open "bear://x-callback-url/create?{query}&amp;new_window=yes&amp;edit=yes"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -269,23 +269,6 @@ fi</string>
 			<string>B7C7DDC1-B797-4FF0-8AA0-0362C306C19A</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-  -- your script here
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>5ADEB109-2C47-4611-B75E-8B710AD3329D</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -319,13 +302,6 @@ To install, download a released alfred-bear.alfredworkflow and double-click to o
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>180</integer>
-		</dict>
-		<key>5ADEB109-2C47-4611-B75E-8B710AD3329D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>380</integer>
-			<key>ypos</key>
-			<integer>480</integer>
 		</dict>
 		<key>74B5AEA1-6AFC-4867-A76D-0FD11694A60D</key>
 		<dict>
